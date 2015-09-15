@@ -1,0 +1,3 @@
+# go-datautil
+
+data utilities
