@@ -8,6 +8,8 @@ import (
 )
 
 // Load data from server or read a local file from disk.
+// Multiple sources can be set and the Load func will return the data
+// at the first success load.
 func Load(src ...interface{}) ([]byte, error) {
 	totalSources := len(src)
 	if totalSources == 0 {
